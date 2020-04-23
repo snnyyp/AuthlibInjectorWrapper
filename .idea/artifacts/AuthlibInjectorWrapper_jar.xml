@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AuthlibInjectorWrapper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AuthlibInjectorWrapper_jar</output-path>
+    <root id="archive" name="AuthlibInjectorWrapper.jar">
+      <element id="module-output" name="AuthlibInjectorWrapper" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-lang3-3.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/fastjson-1.2.68.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
