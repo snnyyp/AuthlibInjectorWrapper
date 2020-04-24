@@ -15,6 +15,11 @@ public class Main {
             System.out.println(Constants.welcomeTitle);
         }
 
+        //检查版本更新
+        System.out.println("Checking updates...");
+        Universal.checkUpdate();
+        System.out.println("------");
+
         //打印一些系统信息
         if ((boolean)config.get("PrintSystemDetail")){
             System.out.println("System details:");
