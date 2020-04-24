@@ -5,16 +5,18 @@
       <artifact name="AuthlibInjectorWrapper:jar" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Universal.java" line="56" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="修补">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/SystemInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/SystemInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/WatchDogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/WatchDogs.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,31 +24,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,61 +36,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/test.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.py" />
-        <option value="$PROJECT_DIR$/AuthlibInjectorWrapper.json" />
-        <option value="$PROJECT_DIR$/ProcessCommunicator.py" />
-        <option value="$PROJECT_DIR$/AuthlibInjectorWrapper/ProcessCommunicator.py" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/StdoutWatchDog.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/AuthlibInjectorWrapper.json" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/WatchDogs.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/CmdBuilder.java" />
-        <option value="$PROJECT_DIR$/src/conf/AuthlibInjectorWrapper.json" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Universal.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/SystemInformation.java" />
-        <option value="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
-  </component>
+  <component name="ProjectId" id="1ayw1MxFsl4K40teQLpA2NhrKLu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AuthlibInjectorWrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthlibInjectorWrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dep/fastjson-1.2.68.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2452642" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -122,18 +58,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\AuthlibInjectorWrapper\src\cn\snnyyp\projects\AuthlibInjectorWrapper\resource" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -165,6 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587189624045</updated>
+      <workItem from="1587720988789" duration="8667000" />
     </task>
     <task id="LOCAL-00001" summary="写好了的第一个版本，经测试可行，到笔记本再修修补补一下">
       <created>1587480891946</created>
@@ -183,262 +108,42 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3803132" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32997763" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32997763" />
-      <window_info anchor="bottom" id="Log Analyzer" order="11" />
-      <window_info anchor="bottom" id="SOQL Query" order="12" weight="0.32997763" />
-      <window_info anchor="bottom" id="Anonymous Apex" order="13" weight="0.32997763" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="写好了的第一个版本，经测试可行，到笔记本再修修补补一下" />
     <MESSAGE value="修补" />
     <option name="LAST_COMMIT_MESSAGE" value="修补" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/production/AuthlibInjectorWrapper/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/MC/server/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/jython2.7.2/test.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/test.class" />
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.py" />
-    <entry file="file://$PROJECT_DIR$/ProcessCommunicator.py" />
-    <entry file="file://$PROJECT_DIR$/AuthlibInjectorWrapper/ProcessCommunicator.py" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120">
-          <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1270">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/WatchDogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AuthlibInjectorWrapper.json" />
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Universal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/SystemInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/CmdBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/conf/AuthlibInjectorWrapper.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AuthlibInjectorWrapper.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/AuthlibInjectorWrapper/cn/snnyyp/projects/AuthlibInjectorWrapper/ProcessCommunicator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>AuthlibInjectorWrapper:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2452642" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2452642" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>fastjson-1.2.68</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2452642" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1587733462668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587733462668" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1587730941454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587730941454" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1587730941454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587730941454" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1587730941454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587730941454" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1587730941454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587730941454" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1587721435925">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587721435925" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1587727162857">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587727162857" />
   </component>
 </project>

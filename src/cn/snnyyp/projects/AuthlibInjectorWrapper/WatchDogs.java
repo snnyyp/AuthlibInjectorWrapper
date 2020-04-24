@@ -12,7 +12,10 @@ class StdoutWatchDog extends Thread{
     @Override
     public void run() {
         while (this.processCommunicator.isAlive()){
-            System.out.println(this.processCommunicator.readLine());
+            String content = this.processCommunicator.readLine();
+            if (!(content == null)){//如果读到的行为空，则不输出
+                System.out.println(content);
+            }
         }
     }
 }

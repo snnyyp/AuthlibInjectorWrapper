@@ -65,6 +65,8 @@ class LinuxProcessCommunicator implements ProcessCommunicator{
 
     public void destroy(){
         try {
+            this.bufferedWriter.close();
+            this.bufferedReader.close();
             this.inputStream.close();
             this.outputStream.close();
         }catch (IOException e){
@@ -73,7 +75,6 @@ class LinuxProcessCommunicator implements ProcessCommunicator{
             this.process.destroy();
         }
     }
-
 }
 
 

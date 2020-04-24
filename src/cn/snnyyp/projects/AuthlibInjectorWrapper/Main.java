@@ -6,7 +6,7 @@ import java.util.Map;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Universal.initConf();//初始化配置文件，如果不存在则用默认配置创建一个
         Map config = Universal.ReadConfig();//读取配置文件
 
@@ -20,6 +20,9 @@ public class Main {
             System.out.println("System details:");
             System.out.println("Operating System: " + SystemInformation.getOsName());
             System.out.println("Java binary home: " + SystemInformation.getJavaBinaryHome());
+            System.out.println("JVM bit: " + SystemInformation.getJvmBit() + "Bit");
+            System.out.println("Machine free memory: " + SystemInformation.getMachineFreeMemory() + "MB");
+            System.out.println("Machine total memory: " + SystemInformation.getMachineTotalMemory() + "MB");
             System.out.println("Java virtual machine arguments: " + SystemInformation.getJvmArgs());
         }
 
@@ -73,6 +76,10 @@ public class Main {
 
         //打印启动命令
         System.out.println("Startup command: " + Universal.listToString(cmd));
+
+        //准备完一切工作后休息5秒，如果用户发现不对劲可以及时停止
+        System.out.println("Server will start after 5 seconds...");
+        Thread.sleep(5000);
 
         //构造ProcessCommunicator
         ProcessCommunicator processCommunicator;

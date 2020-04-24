@@ -1,12 +1,32 @@
 package cn.snnyyp.projects.AuthlibInjectorWrapper;
 
+import com.sun.management.OperatingSystemMXBean;
 import java.lang.management.ManagementFactory;
 import java.util.List;
+
 
 public class SystemInformation {
     public static String getJavaBinaryHome(){
         //获取Java的根目录，java(.exe)还在bin目录下面
-        return String.format("%s/bin/java", System.getProperty("java.home"));
+        return String.format("%s%sbin%sjava", System.getProperty("java.home"),
+                Constants.fileSeparator, Constants.fileSeparator);
+    }
+
+    public static String getJvmBit(){
+        //获取JVM的位数
+        return System.getProperty("sun.arch.data.model");
+    }
+
+    public static String getMachineTotalMemory(){
+        //获取系统最大内存，单位MB
+        OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        return String.valueOf(osmxb.getTotalPhysicalMemorySize() / (1024*1024));
+    }
+
+    public static String getMachineFreeMemory(){
+        //获取系统空闲内存，单位MB
+        OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        return String.valueOf(osmxb.getFreePhysicalMemorySize() / (1024*1024));
     }
 
     public static List<String> getJvmArgs(){
