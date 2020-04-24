@@ -10,5 +10,13 @@ public class Constants {
     public static String authorEmail = "mrdeveloper123@outlook.com";//作者的邮箱
     public static String lineSeparator = System.getProperty("line.separator");//当前系统环境下的换行符
     public static String fileSeparator = File.separator;
-    public static String welcomeTitle = "";
+    public static String welcomeTitle = "| . | _ _ _| |_ | |_ | |<_>| |_ | |._ _ <_> ___  ___ _| |_ ___  _ _ \n" +
+            "|   || | | | |  | . || || || . \\| || ' || |/ ._>/ | ' | | / . \\| '_>\n" +
+            "|_|_|`___| |_|  |_|_||_||_||___/|_||_|_|| |\\___.\\_|_. |_| \\___/|_|  \n" +
+            "                                       <__'                         \n" +
+            " _ _ _                               \n" +
+            "| | | | _ _  ___  ___  ___  ___  _ _ \n" +
+            "| | | || '_><_> || . \\| . \\/ ._>| '_>\n" +
+            "|__/_/ |_|  <___||  _/|  _/\\___.|_|  \n" +
+            "                 |_|  |_|            ";
 }
