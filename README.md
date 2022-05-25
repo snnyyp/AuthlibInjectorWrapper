@@ -6,7 +6,7 @@ I usually code in Python, that means I do not have a good master of Java, though
 But this project still works well, that's the most important :-)
 
 # Long-in-short tutorial
-1. Download the latest build jar file from the [release page](https://github.com/MRdeveloper123/AuthlibInjectorWrapper/releases)
+1. Download the latest build jar file from the [release page](https://github.com/snnyyp/AuthlibInjectorWrapper/releases)
 2. Upload the jar file to your server(through FTP software or online FTP manager)
 3. If the server provider forces you to rename the jar file, please follow what he said
 4. Go to your web panel page and start the server. When you see "Server will start after 5 seconds..." in the console log, stop the server immediately
