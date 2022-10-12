@@ -16,9 +16,9 @@ public class Main {
         }
 
         //检查版本更新
-        System.out.println("Checking updates...");
-        Universal.checkUpdate();
-        System.out.println("------");
+        //System.out.println("Checking updates...");
+        //Universal.checkUpdate();
+        //System.out.println("------");
 
         //打印一些系统信息
         if ((boolean)config.get("PrintSystemDetail")){
