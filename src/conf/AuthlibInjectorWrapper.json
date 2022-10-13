@@ -6,5 +6,6 @@
   "AuthlibInjectorPath": "authlib-injector.jar",
   "YggdrasilUrl": "https://www.mcpeau.com/api/yggdrasil/",
   "ServerJar": "forge-1.16.5.jar",
-  "ServerJarArguments": ""
+  "ServerJarArguments": "nogui",
+  "FORGE_VERSION": "40.1.80"
 }
