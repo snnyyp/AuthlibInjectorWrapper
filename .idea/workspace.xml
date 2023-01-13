@@ -5,17 +5,15 @@
       <artifact name="AuthlibInjectorWrapper:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="欢迎标语">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_httpclient_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dep/commons-httpclient-3.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthlibInjectorWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthlibInjectorWrapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Universal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/snnyyp/projects/AuthlibInjectorWrapper/Universal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conf/AuthlibInjectorWrapper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/conf/AuthlibInjectorWrapper.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -48,7 +45,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dep/commons-logging-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2452642" />
@@ -61,6 +63,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_181" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="cn.snnyyp.projects.AuthlibInjectorWrapper.Main" />
       <module name="AuthlibInjectorWrapper" />
       <extension name="coverage">
@@ -75,10 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="项目级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -90,6 +95,11 @@
       <option name="presentableId" value="Default" />
       <updated>1587189624045</updated>
       <workItem from="1587720988789" duration="15940000" />
+      <workItem from="1670651682940" duration="124000" />
+      <workItem from="1670652440005" duration="288000" />
+      <workItem from="1670652740625" duration="1348000" />
+      <workItem from="1673405754192" duration="1058000" />
+      <workItem from="1673603984445" duration="5195000" />
     </task>
     <task id="LOCAL-00001" summary="写好了的第一个版本，经测试可行，到笔记本再修修补补一下">
       <created>1587480891946</created>
@@ -130,7 +140,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="写好了的第一个版本，经测试可行，到笔记本再修修补补一下" />
@@ -139,47 +161,5 @@
     <MESSAGE value="修正了自述文件的几个语法问题，增加了欢迎标语" />
     <MESSAGE value="欢迎标语" />
     <option name="LAST_COMMIT_MESSAGE" value="欢迎标语" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="196" y="0" key="CommitChangelistDialog2" timestamp="1587741366209">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="196" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587741366209" />
-    <state x="357" y="104" key="FileChooserDialogImpl" timestamp="1587739976204">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="357" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587739976204" />
-    <state width="1322" height="214" key="GridCell.Tab.0.bottom" timestamp="1587741356022">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587741356022" />
-    <state width="1322" height="214" key="GridCell.Tab.0.center" timestamp="1587741356022">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587741356022" />
-    <state width="1322" height="214" key="GridCell.Tab.0.left" timestamp="1587741356022">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587741356022" />
-    <state width="1322" height="214" key="GridCell.Tab.0.right" timestamp="1587741356022">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587741356022" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1587741379985">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587741379985" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1587735990236">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587735990236" />
-    <state x="370" y="377" key="git4idea.ui.GitTagDialog" timestamp="1587736050809">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="370" y="377" key="git4idea.ui.GitTagDialog/0.0.1366.728@0.0.1366.728" timestamp="1587736050809" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1587727162857">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587727162857" />
   </component>
 </project>

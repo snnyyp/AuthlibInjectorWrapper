@@ -1,5 +1,6 @@
 package cn.snnyyp.projects.AuthlibInjectorWrapper;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +18,7 @@ public class Main {
 
         //检查版本更新
         //System.out.println("Checking updates...");
-        //Universal.checkUpdate();
+        //Universal.authlib_download_url("https://authlib-injector.yushi.moe/artifact/latest.json");
         //System.out.println("------");
 
         //打印一些系统信息
@@ -56,30 +57,26 @@ public class Main {
             );
         }
 
-        //配置AuthlibInjector
-        if (!config.get("AuthlibInjectorPath").equals("")) {//如果AuthlibInjector的路径为空，则不设置该参数，反之设置改参数
+        //配置YggdrasilUrl
+        if (!config.get("YggdrasilUrl").equals("")) {//如果AuthlibInjector的路径为空，则不设置该参数，反之设置改参数
             if (((String) config.get("YggdrasilUrl")).trim().equals("")) {//既然有配置了AuthlibInjector路径了，怎么能不配置Yggdrasil的Url呢
                 System.out.println("You have to configure the YggdrasilUrl if you set the AuthlibInjectorPath");
                 System.exit(0);
             } else {
+                File file = new File("authlib-injector.jar");
+                if (!file.exists()) {
+                    System.out.println("authlib-injector does not exist, start downloading");
+                    Universal.authlib_download_url((String) config.get("authlib-injector"));
+                    System.out.println("authlib-injector download complete");
+                }
                 cmd.add(
-                        String.format("-javaagent:%s=%s", config.get("AuthlibInjectorPath"), config.get("YggdrasilUrl"))
+                        String.format("-javaagent:authlib-injector.jar=%s", config.get("YggdrasilUrl"))
                 );
             }
         }
 
 
         if (((String) config.get("ServerJar")).trim().equals("")) {
-            //配置服务端核心
-            if (((String) config.get("ServerJar")).trim().equals("")) {//怎么能不配置服务端核心路径呢
-                System.out.println("You have to configure the ServerJar");
-                System.exit(0);
-            } else {
-                cmd.add(
-                        String.format("-jar %s %s", config.get("ServerJar"), config.get("ServerJarArguments"))
-                );
-            }
-        } else {
             //1.18.2 启动脚本
             //@user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-%FORGE_VERSION%/win_args.txt
             String system_type;
@@ -89,7 +86,11 @@ public class Main {
                 system_type = "unix_args";
             }
             cmd.add(
-                    String.format("@user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-%s/%s.txt %s", config.get("FORGE_VERSION"), system_type, config.get("ServerJarArguments"))
+                    String.format("@user_jvm_args.txt @libraries/net/minecraftforge/forge/%s/%s.txt %s", config.get("FORGE_VERSION"), system_type, config.get("ServerJarArguments"))
+            );
+        } else {
+            cmd.add(
+                    String.format("-jar %s %s", config.get("ServerJar"), config.get("ServerJarArguments"))
             );
         }
 

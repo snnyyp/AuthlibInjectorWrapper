@@ -3,7 +3,7 @@
   "PrintSystemDetail": true,
   "JavaBinaryHome": "java",
   "JvmArguments": "",
-  "AuthlibInjectorPath": "authlib-injector.jar",
+  "authlib-injector": "https://authlib-injector.yushi.moe/artifact/latest.json",
   "YggdrasilUrl": "https://www.mcpeau.com/api/yggdrasil/",
   "ServerJar": "forge-1.16.5.jar",
   "ServerJarArguments": "nogui",

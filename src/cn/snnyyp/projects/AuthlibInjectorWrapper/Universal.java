@@ -4,10 +4,16 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+
+import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang3.StringUtils;
 import com.alibaba.fastjson.JSON;
 
@@ -76,5 +82,77 @@ public class Universal {
             e.printStackTrace();
         }
         return new HashMap();
+    }
+
+    public static String authlib_download_url(String url){
+        //检查版本更新
+        HttpURLConnection connection = null;
+        InputStream is = null;
+        BufferedReader br = null;
+        String download_url = "";// 返回结果字符串
+        try {
+            // 创建远程url连接对象
+            //URL url = new URL(url1);
+            // 通过远程url连接对象打开一个连接，强转成httpURLConnection类
+            connection = (HttpURLConnection) new URL(url).openConnection();
+            // 设置连接方式：get
+            connection.setRequestMethod("GET");
+            // 设置连接主机服务器的超时时间：15000毫秒
+            connection.setConnectTimeout(15000);
+            // 设置读取远程返回的数据时间：60000毫秒
+            connection.setReadTimeout(60000);
+            // 发送请求
+            connection.connect();
+            // 通过connection连接，获取输入流
+            if (connection.getResponseCode() == 200) {
+                is = connection.getInputStream();
+                // 封装输入流is，并指定字符集
+                br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                // 存放数据
+                StringBuffer sbf = new StringBuffer();
+                String temp = null;
+                while ((temp = br.readLine()) != null) {
+                    sbf.append(temp);
+                }
+                JSONObject jsonObject= JSONObject.parseObject(sbf.toString());
+                download_url = jsonObject.getString("download_url");
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            // 关闭资源
+            if (null != br) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (null != is) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            connection.disconnect();// 关闭远程连接
+        }
+        downloadByNIO2(download_url,System.getProperty("user.dir"),"authlib-injector.jar");
+        return download_url;
+    }
+
+
+    public static void downloadByNIO2(String url, String saveDir, String fileName) {
+        try (InputStream ins = new URL(url).openStream()) {
+            Path target = Paths.get(saveDir, fileName);
+            Files.createDirectories(target.getParent());
+            Files.copy(ins, target, StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
