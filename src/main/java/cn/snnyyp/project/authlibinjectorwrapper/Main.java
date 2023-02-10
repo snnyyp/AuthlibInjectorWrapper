@@ -59,23 +59,23 @@ public final class Main {
         // {java_binary_path} {jvm_argument} -javaagent:{authlib_injector_path}={yggdrasil_url} -jar {server_jar} {server_jar_argument}
         List<String> commandStringList = new ArrayList<>();
         // 配置java_binary_path
+        // 如果java_binary_path未被配置，则使用当前正在运行本jar的JVM的路径
+        // 如果java_binary_path被配置了，则使用配置文件里的
         String configJavaBinaryPath = ((String) config.get("java_binary_path")).trim();
-        if (configJavaBinaryPath.isEmpty()) {
-            // 如果java_binary_path未被配置，则使用当前正在运行本jar的JVM的路径
-            commandStringList.add(SystemInformation.getCurrentJvmBinaryPath());
-        } else {
-            // 如果java_binary_path被配置了，则使用配置文件里的
-            commandStringList.add(configJavaBinaryPath);
-        }
+        commandStringList.add(
+                configJavaBinaryPath.isEmpty()
+                        ? SystemInformation.getCurrentJvmBinaryPath()
+                        : configJavaBinaryPath
+        );
         // 配置Java虚拟机参数
+        // 如果配置文件的jvm_argument是%default%，则使用面板默认传入的参数
+        // 反之，则使用配置文件中的参数
         String configJvmArgument = ((String) config.get("jvm_argument")).trim();
-        if ("%default%".equals(configJvmArgument)) {
-            // 如果配置文件的jvm_argument是%default%，则使用面板默认传入的参数
-            commandStringList.add(StringUtils.join(SystemInformation.getJvmArgs(), StringUtils.SPACE));
-        } else {
-            // 反之，则使用配置文件中的参数
-            commandStringList.add(configJvmArgument);
-        }
+        commandStringList.add(
+                "%default%".equals(configJvmArgument)
+                        ? StringUtils.join(SystemInformation.getJvmArgs(), StringUtils.SPACE)
+                        :configJvmArgument
+        );
         // 配置AuthlibInjector
         String configAuthlibInjectorPath = ((String) config.get("authlib_injector_path")).trim();
         if (!configAuthlibInjectorPath.isEmpty()) {

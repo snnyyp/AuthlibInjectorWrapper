@@ -81,9 +81,6 @@ public final class SystemInformation {
      * @return 操作系统的名称
      */
     public static String getOsName() {
-        if (isWindows()) {
-            return "Windows";
-        }
-        return "Non-Windows";
+        return isWindows() ? "Windows" : "Non-Windows";
     }
 }
