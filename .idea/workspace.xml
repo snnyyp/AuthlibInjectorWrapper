@@ -12,13 +12,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthlibInjectorWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthlibInjectorWrapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/AuthlibInjectorWrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/AuthlibInjectorWrapper/SystemInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/SystemInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/AuthlibInjectorWrapper/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Util.java" afterDir="false" />
+    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素">
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +116,7 @@
       <workItem from="1675999394841" duration="1065000" />
       <workItem from="1676000472138" duration="17000" />
       <workItem from="1676000496265" duration="45000" />
-      <workItem from="1676000548379" duration="495000" />
+      <workItem from="1676000548379" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="写好了的第一个版本，经测试可行，到笔记本再修修补补一下">
       <created>1587480891946</created>
@@ -172,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676000158577</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素">
+      <created>1676001259401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676001259401</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +198,8 @@
     <MESSAGE value="修正了自述文件的几个语法问题，增加了欢迎标语" />
     <MESSAGE value="欢迎标语" />
     <MESSAGE value="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码" />
+    <MESSAGE value="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

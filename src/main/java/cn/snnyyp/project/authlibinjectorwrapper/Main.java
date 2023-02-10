@@ -2,7 +2,6 @@ package cn.snnyyp.project.authlibinjectorwrapper;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -117,9 +116,7 @@ public final class Main {
         commandStringList.removeIf(StringUtils.SPACE::equals);
         commandStringList.removeIf(StringUtils.EMPTY::equals);
         // 构造ProcessBuilder
-        ProcessBuilder processBuilder = new ProcessBuilder(commandStringList)
-                .directory(new File(System.getProperty("user.dir")))
-                .inheritIO();
+        ProcessBuilder processBuilder = new ProcessBuilder(commandStringList).inheritIO();
         // 打印启动命令
         Util.printlnf("[AuthlibInjectorWrapper]: Startup command: %s", processBuilder.command());
         // 准备完一切工作后sleep 5秒，如果用户发现不对劲可以及时停止
