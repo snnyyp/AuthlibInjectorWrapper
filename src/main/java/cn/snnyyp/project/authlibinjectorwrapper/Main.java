@@ -1,4 +1,4 @@
-package cn.snnyyp.project.AuthlibInjectorWrapper;
+package cn.snnyyp.project.authlibinjectorwrapper;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -114,8 +114,8 @@ public final class Main {
             commandStringList.add(configServerJarArgument);
         }
         // 移除列表中的空格和空字符串
-        while (commandStringList.remove(StringUtils.SPACE));
-        while (commandStringList.remove(StringUtils.EMPTY));
+        commandStringList.removeIf(StringUtils.SPACE::equals);
+        commandStringList.removeIf(StringUtils.EMPTY::equals);
         // 构造ProcessBuilder
         ProcessBuilder processBuilder = new ProcessBuilder(commandStringList)
                 .directory(new File(System.getProperty("user.dir")))
@@ -137,8 +137,6 @@ public final class Main {
             e.printStackTrace();
             System.exit(5);
         }
-        // 程序结束后，先换一行
-        System.out.println();
         // 打印程序状态码
         Util.printlnf(
                 "[AuthlibInjectorWrapper]: Process exited with status code %s",

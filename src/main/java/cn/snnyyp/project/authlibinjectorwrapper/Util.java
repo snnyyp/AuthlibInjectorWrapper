@@ -1,4 +1,4 @@
-package cn.snnyyp.project.AuthlibInjectorWrapper;
+package cn.snnyyp.project.authlibinjectorwrapper;
 
 import com.moandjiezana.toml.Toml;
 import org.apache.commons.io.FileUtils;
@@ -22,7 +22,7 @@ public final class Util {
      * 带换行的System.out.printf()
      *
      * @param format 格式
-     * @param args 替换参数
+     * @param args   替换参数
      */
     public static void printlnf(String format, Object... args) {
         System.out.printf(format, args);
@@ -57,7 +57,7 @@ public final class Util {
      *
      * @return 配置文件Map[String, Object]
      */
-    public static Map<String, Object> readConfig() throws IOException{
+    public static Map<String, Object> readConfig() throws IOException {
         return new Toml()
                 .read(Files.newInputStream(Paths.get("AuthlibInjectorWrapper.toml")))
                 .toMap();

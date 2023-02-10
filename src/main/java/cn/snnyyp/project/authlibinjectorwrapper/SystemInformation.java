@@ -1,4 +1,4 @@
-package cn.snnyyp.project.AuthlibInjectorWrapper;
+package cn.snnyyp.project.authlibinjectorwrapper;
 
 import com.sun.management.OperatingSystemMXBean;
 
@@ -47,6 +47,7 @@ public final class SystemInformation {
 
     /**
      * 获取系统空闲内存，单位MB
+     *
      * @return 系统空闲内存
      */
     public static String getMachineFreeMemory() {
