@@ -12,7 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素">
+    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="简化">
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +116,7 @@
       <workItem from="1675999394841" duration="1065000" />
       <workItem from="1676000472138" duration="17000" />
       <workItem from="1676000496265" duration="45000" />
-      <workItem from="1676000548379" duration="877000" />
+      <workItem from="1676000548379" duration="1406000" />
     </task>
     <task id="LOCAL-00001" summary="写好了的第一个版本，经测试可行，到笔记本再修修补补一下">
       <created>1587480891946</created>
@@ -174,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676001259401</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="简化">
+      <created>1676001531456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676001531456</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +206,8 @@
     <MESSAGE value="欢迎标语" />
     <MESSAGE value="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码" />
     <MESSAGE value="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素" />
+    <MESSAGE value="简化" />
+    <option name="LAST_COMMIT_MESSAGE" value="简化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

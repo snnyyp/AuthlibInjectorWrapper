@@ -28,7 +28,7 @@ public final class Main {
             System.exit(1);
         }
         // 初始化无误，读取配置文件
-        Map<String, Object> config = new HashMap<>();
+        Map<String, Object> config = new HashMap<>(8);
         try {
             config = Util.readConfig();
         } catch (IOException e) {
