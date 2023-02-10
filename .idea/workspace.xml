@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AuthlibInjectorWrapper:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="简化">
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/snnyyp/project/authlibinjectorwrapper/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="1ayw1MxFsl4K40teQLpA2NhrKLu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.1546875&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33117485&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Java\AuthlibInjectorWrapper\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\AuthlibInjectorWrapper\src\cn\snnyyp\projects\AuthlibInjectorWrapper\resource" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AuthlibInjectorWrapper build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="项目级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc9e9ee7-0646-4d15-bef8-167b492ca6c3" name="Default Changelist" comment="" />
+      <created>1587189624045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587189624045</updated>
+      <workItem from="1587720988789" duration="15940000" />
+      <workItem from="1675947659253" duration="15505000" />
+      <workItem from="1675999348827" duration="38000" />
+      <workItem from="1675999394841" duration="1065000" />
+      <workItem from="1676000472138" duration="17000" />
+      <workItem from="1676000496265" duration="45000" />
+      <workItem from="1676000548379" duration="1406000" />
+    </task>
+    <task id="LOCAL-00001" summary="写好了的第一个版本，经测试可行，到笔记本再修修补补一下">
+      <created>1587480891946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587480891946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修补">
+      <created>1587649751860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587649751860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="关闭缓存写和缓存读，完善了自述文件，更多的系统信息">
+      <created>1587733953220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587733953220</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修正了自述文件的几个语法问题，增加了欢迎标语">
+      <created>1587735688281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587735688281</updated>
+    </task>
+    <task id="LOCAL-00005" summary="欢迎标语">
+      <created>1587735981559</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587735981559</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码">
+      <created>1675999566585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675999566585</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码">
+      <created>1676000158577</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676000158577</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素">
+      <created>1676001259401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676001259401</updated>
+    </task>
+    <task id="LOCAL-00009" summary="简化">
+      <created>1676001531456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676001531456</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="写好了的第一个版本，经测试可行，到笔记本再修修补补一下" />
+    <MESSAGE value="修补" />
+    <MESSAGE value="关闭缓存写和缓存读，完善了自述文件，更多的系统信息" />
+    <MESSAGE value="修正了自述文件的几个语法问题，增加了欢迎标语" />
+    <MESSAGE value="欢迎标语" />
+    <MESSAGE value="更改配置文件格式至TOML；使用Maven进行依赖管理；大幅度简化代码；格式化代码" />
+    <MESSAGE value="修正不规范的包命名；添加pom.xml；更好的List删除所有指定元素" />
+    <MESSAGE value="简化" />
+    <option name="LAST_COMMIT_MESSAGE" value="简化" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
