@@ -1,8 +1,8 @@
 print_welcome_title = true
 print_system_detail = true
-java_binary_path = ""
-jvm_argument = "%default%"
-authlib_injector_path = "authlib_injector.jar"
-yggdrasil_url = "https://example.com/api/yggdrasil/"
-server_jar = "server.jar"
-server_jar_argument = ""
+java_binary_path = ''
+jvm_argument = '%default%'
+authlib_injector_path = 'authlib_injector.jar'
+yggdrasil_url = 'https://example.com/api/yggdrasil/'
+server_jar = 'server.jar'
+server_jar_argument = ''

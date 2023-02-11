@@ -3,10 +3,7 @@ package cn.snnyyp.project.authlibinjectorwrapper;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 /**
@@ -70,11 +67,14 @@ public final class Main {
         // 配置Java虚拟机参数
         // 如果配置文件的jvm_argument是%default%，则使用面板默认传入的参数
         // 反之，则使用配置文件中的参数
+        //
+        // 这里要注意，如果使用的是配置文件中的参数，要将获取到的字符串以空格为分割组成列表，再add
+        // 因为ProcessBuilder对字符串中的空格特别敏感，因此要额外处理
         String configJvmArgument = ((String) config.get("jvm_argument")).trim();
-        commandStringList.add(
+        commandStringList.addAll(
                 "%default%".equals(configJvmArgument)
-                        ? StringUtils.join(SystemInformation.getJvmArgs(), StringUtils.SPACE)
-                        :configJvmArgument
+                        ? SystemInformation.getJvmArgs()
+                        : Arrays.asList(configJvmArgument.split(StringUtils.SPACE))
         );
         // 配置AuthlibInjector
         String configAuthlibInjectorPath = ((String) config.get("authlib_injector_path")).trim();
@@ -110,15 +110,19 @@ public final class Main {
             String configServerJarArgument = ((String) config.get("server_jar_argument")).trim();
             commandStringList.add("-jar");
             commandStringList.add(configServerJar);
-            commandStringList.add(configServerJarArgument);
+            // 这里同样的，jar文件的参数也要按空格分割后使用
+            // 甚至包括-p 25566这样的都不行，也要分割
+            commandStringList.addAll(
+                    Arrays.asList(configServerJarArgument.split(StringUtils.SPACE))
+            );
         }
-        // 移除列表中的空格和空字符串
+        // 移除列表中的纯空格和纯空字符串
         commandStringList.removeIf(StringUtils.SPACE::equals);
         commandStringList.removeIf(StringUtils.EMPTY::equals);
         // 构造ProcessBuilder
         ProcessBuilder processBuilder = new ProcessBuilder(commandStringList).inheritIO();
         // 打印启动命令
-        Util.printlnf("[AuthlibInjectorWrapper]: Startup command: %s", processBuilder.command());
+        Util.printlnf("[AuthlibInjectorWrapper]: Startup command: %s", commandStringList);
         // 准备完一切工作后sleep 5秒，如果用户发现不对劲可以及时停止
         System.out.println("[AuthlibInjectorWrapper]: Server will start in 5 seconds...");
         Thread.sleep(5 * 1000);
