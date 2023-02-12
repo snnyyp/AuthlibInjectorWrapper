@@ -1,9 +1,11 @@
 package cn.snnyyp.project.authlibinjectorwrapper;
 
-import org.apache.commons.lang3.StringUtils;
-
+import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 
 /**
@@ -25,7 +27,7 @@ public final class Main {
             System.exit(1);
         }
         // 初始化无误，读取配置文件
-        Map<String, Object> config = new HashMap<>(8);
+        ConfigStruct config = null;
         try {
             config = Util.readConfig();
         } catch (IOException e) {
@@ -37,92 +39,74 @@ public final class Main {
         // 读取配置文件无误，程序正式开始
         //
         // 打印欢迎语
-        if ((boolean) config.get("print_welcome_title")) {
+        if (config.print_welcome_title) {
             System.out.println("===========================================");
             System.out.println("| Thanks for using AuthlibInjectorWrapper |");
             System.out.println("===========================================");
         }
         // 打印系统信息
-        if ((boolean) config.get("print_system_detail")) {
+        if (config.print_system_detail) {
             System.out.println("System details:");
-            Util.printlnf("\tOperating system: %s", SystemInformation.getOsName());
-            Util.printlnf("\tCurrent JVM binary path: %s", SystemInformation.getCurrentJvmBinaryPath());
-            Util.printlnf("\tJVM bit: %sBit", SystemInformation.getJvmBit());
-            Util.printlnf("\tMachine free memory: %sMB", SystemInformation.getMachineFreeMemory());
-            Util.printlnf("\tMachine total memory: %sMB", SystemInformation.getMachineTotalMemory());
-            Util.printlnf("\tJVM arguments: %s", SystemInformation.getJvmArgs());
+            Util.printlnf("    Operating system: %s", SystemInformation.getOsName());
+            Util.printlnf("    Current directory: %s", System.getProperty("user.dir"));
+            Util.printlnf("    Current JVM binary path: %s", SystemInformation.getCurrentJvmBinaryPath());
+            Util.printlnf("    JVM bit: %sBit", SystemInformation.getJvmBit());
+            Util.printlnf("    Machine free memory: %sMB", SystemInformation.getMachineFreeMemory());
+            Util.printlnf("    Machine total memory: %sMB", SystemInformation.getMachineTotalMemory());
+            Util.printlnf("    Current JVM argument: %s", SystemInformation.getJvmArgument());
         }
-        // 最终的启动命令
-        // {java_binary_path} {jvm_argument} -javaagent:{authlib_injector_path}={yggdrasil_url} -jar {server_jar} {server_jar_argument}
-        List<String> commandStringList = new ArrayList<>();
-        // 配置java_binary_path
-        // 如果java_binary_path未被配置，则使用当前正在运行本jar的JVM的路径
-        // 如果java_binary_path被配置了，则使用配置文件里的
-        String configJavaBinaryPath = ((String) config.get("java_binary_path")).trim();
-        commandStringList.add(
-                configJavaBinaryPath.isEmpty()
-                        ? SystemInformation.getCurrentJvmBinaryPath()
-                        : configJavaBinaryPath
-        );
-        // 配置Java虚拟机参数
-        // 如果配置文件的jvm_argument是%default%，则使用面板默认传入的参数
-        // 反之，则使用配置文件中的参数
-        //
-        // 这里要注意，如果使用的是配置文件中的参数，要将获取到的字符串以空格为分割组成列表，再add
-        // 因为ProcessBuilder对字符串中的空格特别敏感，因此要额外处理
-        String configJvmArgument = ((String) config.get("jvm_argument")).trim();
-        commandStringList.addAll(
-                "%default%".equals(configJvmArgument)
-                        ? SystemInformation.getJvmArgs()
-                        : Arrays.asList(configJvmArgument.split(StringUtils.SPACE))
-        );
-        // 配置AuthlibInjector
-        String configAuthlibInjectorPath = ((String) config.get("authlib_injector_path")).trim();
-        if (!configAuthlibInjectorPath.isEmpty()) {
-            // 如果authlib_injector_path非空，则设置该参数，反之则不设置
-            String configYggdrasilUrl = ((String) config.get("yggdrasil_url")).trim();
-            if (configYggdrasilUrl.isEmpty()) {
-                // 设置了authlib_injector_path，但是没设置yggdrasil_url
-                // 这是不行的
-                // 直接退出程序，返回码3
-                System.out.println("[AuthlibInjectorWrapper]: An severe error occurred, the program will exit immediately");
-                System.out.println("[AuthlibInjectorWrapper]: You have to set 'yggdrasil_url' if you set 'authlib_injector_path'");
-                System.exit(3);
-            } else {
-                // 设置了authlib_injector_path，且设置了yggdrasil_url
-                commandStringList.add(
-                        String.format("-javaagent:%s=%s", configAuthlibInjectorPath, configYggdrasilUrl)
+        // 初始化参数列表
+        List<String> processBuilderCommand = new ArrayList<>();
+        // 根据重载类型进行参数构造
+        switch (config.override_type) {
+            case command:
+                // command重载
+                // 直接全部加入
+                processBuilderCommand.addAll(config.override_launch_command);
+                break;
+            case script:
+                // script重载
+                // Windows加入cmd /c
+                // 其它系统就加入bash
+                processBuilderCommand.addAll(
+                        SystemInformation.isWindows()
+                                ? Arrays.asList("cmd", "/c")
+                                : Collections.singletonList("bash")
                 );
-            }
+                // 如果配置文件的override_launch_script_path是空的
+                // 提示并退出，返回码3
+                if (config.override_launch_script_path.isEmpty()) {
+                    System.out.println("[AuthlibInjectorWrapper]: An severe error occurred, the program will exit immediately");
+                    System.out.println("[AuthlibInjectorWrapper]: 'override_launch_script_path' cannot be empty");
+                    System.exit(3);
+                }
+                // 如果override_launch_script_path指向的文件不存在
+                // 提示并退出，返回码4
+                if (!new File(config.override_launch_script_path).exists()) {
+                    System.out.println("[AuthlibInjectorWrapper]: An severe error occurred, the program will exit immediately");
+                    System.out.println("[AuthlibInjectorWrapper]: Override launch script does not exist");
+                    System.exit(4);
+                }
+                // script存在，加入参数
+                processBuilderCommand.add(config.override_launch_script_path);
+                break;
+            default:
+                // 两个都不是，非法参数
+                // 提示并退出，返回码5
+                System.out.println("[AuthlibInjectorWrapper]: An severe error occurred, the program will exit immediately");
+                System.out.println("[AuthlibInjectorWrapper]: 'override_type' can only be 'command' or 'script'");
+                System.exit(5);
         }
-        // 配置服务端核心
-        String configServerJar = ((String) config.get("server_jar")).trim();
-        if (configServerJar.isEmpty()) {
-            // 未配置server_jar
-            // 这是不行的
-            // 直接退出程序，返回码4
-            System.out.println("[AuthlibInjectorWrapper]: An severe error occurred, the program will exit immediately");
-            System.out.println("[AuthlibInjectorWrapper]: You have to set 'server_jar'");
-            System.exit(4);
-        } else {
-            // 配置了server_jar
-            // 和server_jar_argument一起加入启动命令
-            String configServerJarArgument = ((String) config.get("server_jar_argument")).trim();
-            commandStringList.add("-jar");
-            commandStringList.add(configServerJar);
-            // 这里同样的，jar文件的参数也要按空格分割后使用
-            // 甚至包括-p 25566这样的都不行，也要分割
-            commandStringList.addAll(
-                    Arrays.asList(configServerJarArgument.split(StringUtils.SPACE))
-            );
-        }
-        // 移除列表中的纯空格和纯空字符串
-        commandStringList.removeIf(StringUtils.SPACE::equals);
-        commandStringList.removeIf(StringUtils.EMPTY::equals);
         // 构造ProcessBuilder
-        ProcessBuilder processBuilder = new ProcessBuilder(commandStringList).inheritIO();
-        // 打印启动命令
-        Util.printlnf("[AuthlibInjectorWrapper]: Startup command: %s", commandStringList);
+        ProcessBuilder processBuilder = new ProcessBuilder(processBuilderCommand).inheritIO();
+        // 打印重载参数
+        Util.printlnf("[AuthlibInjectorWrapper]: Override type: %s", config.override_type);
+        Util.printlnf(
+                "[AuthlibInjectorWrapper]: Override argument: %s",
+                config.override_type == ConfigStruct.OverrideType.command
+                        ? config.override_launch_command
+                        : config.override_launch_script_path
+        );
         // 准备完一切工作后sleep 5秒，如果用户发现不对劲可以及时停止
         System.out.println("[AuthlibInjectorWrapper]: Server will start in 5 seconds...");
         Thread.sleep(5 * 1000);

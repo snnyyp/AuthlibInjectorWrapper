@@ -62,7 +62,7 @@ public final class SystemInformation {
      *
      * @return JVM的启动参数
      */
-    public static List<String> getJvmArgs() {
+    public static List<String> getJvmArgument() {
         return ManagementFactory.getRuntimeMXBean().getInputArguments();
     }
 
